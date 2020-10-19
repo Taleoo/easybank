@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0 2% 0.5% 2%;
+  padding: 0;
+}
+body {
+  background-color: white;
+}
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 10vw;
+}
+header {
+  background-color: white;
+  padding: 1vh 2vw 0 0;
+  width: 100vw;
+}
+header > ul {
+  width: 45%;
+  text-align: center;
+}
+header > ul > li {
+  display: inline-block;
+  margin-left: 7%;
+}
+header > button {
+  margin-right: 15vw;
+}
+.bigtopdiv {
+  position: relative;
+  width: 100vw;
+  height: 55vh;
+}
+.topdiv {
+  width: 40vw;
+}
+#marginBot{
+    margin-bottom: 10vw;
+}
+#phoneImage {
+  position: absolute;
+  right: -5vw;
+  top: -10vh;
+  z-index: -1;
+  overflow-x: hidden;
+}
+#flexbox {
+  flex-direction: row-reverse;
+  justify-content: unset;
+}
+.smalldiv {
+  width: 200px;
+  height: 200px;
+  margin: 0 0 15vh 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.smalldiv > img{
+    margin-bottom: 2vh;
+}
+.smalldiv > h2{
+    margin-bottom: 2vh;
+}
+.botdiv{
+    width: 100vw;
+}
+.article > img{
+    width: 15vw;
+}
+.article{
+    width: 15vw;
+}
