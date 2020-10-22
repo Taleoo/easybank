@@ -211,7 +211,7 @@ button:active{
 button:focus{
 outline: none;
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 550px){
   #phoneimage{
     display: flex;
     flex-flow: column nowrap;
