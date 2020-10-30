@@ -3,10 +3,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 18px;
 }
 body {
   background-color: white;
-  font-size: 18px;
   font-family: "Public Sans";
 }
 #phoneimage{
@@ -20,29 +20,34 @@ body {
 }
 header {
   background-color: white;
-  padding: 1.5vh 0 1vh 9vw;
-  width: 100vw;
+  padding: 1em 15vw 1em 15vw;
+  width: 100%;
   max-width:100%;
-  height: 9vh;
+  height: 4.5rem;
 }
 #menu{
   display: none;
 }
 header > ul {
   font-weight: 700;
-  width: 30vw;
+  width: 50%;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
 }
 header > img{
-  height: 4vh;
+  height: 3em;
+  width: 16em;
 }
 header > ul > li {
   display: inline-block;
-  margin-left: 7%;
 }
 header > ul > li:active{
-  border-bottom: 4px solid hsl(136, 65%, 51%);
-  padding-bottom: 4.4vh;
+  border-bottom: 4px solid transparent;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgba(49,208,105,1) 0%, rgba(43,183,218,1) 100%);
+  padding-bottom: 2rem;
 }
 a{
   text-decoration: none;
@@ -51,102 +56,110 @@ a{
 button {
   font-size: 15px;
   font-weight: 700;
-  margin-right: 10vw;
   border-radius: 25px;
   border-style: none;
   color: white;
-  width: 150px;
-  height: 50px;
+  width: 10em;
+  height: 3em;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,208,105,1) 0%, rgba(0,212,255,1) 100%);
 }
 .bigtopdiv {
-  width: 100vw;
+  width: 100%;
   max-width:100%;
-  height: 60vh;
-  padding: 0 0 0 13vw;
+  height: 26rem;
+  padding: 0 0 0 20%;
   position: relative;
   display: flex;
 }
 #bkg{
   background: url("images/image-mockups.png") , url("images/bg-intro-desktop.svg") content-box;
   background-repeat: no-repeat;
-  background-position: 11vw -15vh, 0vw -35vh;
+  background-position: 19rem -7rem, 8rem -15rem;
   top: 0;
-  left: 45vw;
-  width: 53.95vw;
+  right: 0; 
+  width: 54rem;
   max-width: 55%;
-  height: 108vh;
-  padding-bottom: 18vh;
+  height: 50rem;
+  max-height: 170%;
   position: absolute;
+  z-index: 2;
 }
 .topdiv {
-  margin: 30vh 0;
-  width: 28vw;
-  height: 40vh;
+  margin: 12rem 0 0 0;
+  width: 30rem;
+  z-index: 100;
+
 }
 .bigtopdiv h1{
-  font-size: 56px;
+  font-size: 3em;
   font-weight: 700;
+  z-index: 100;
+
 }
 .topdiv > p{
-  line-height: 4vh;
+  line-height: 2em;
   font-size: 18px;
   font-weight: 700;
-  margin: 4vh 0 7vh;
+  margin: 2rem 0 2rem;
   color: hsl(233, 8%, 62%);
+  z-index: 100;
 }
 #middlediv{
-  height: 90vh;
-  width: 100vw;
+  height: 40rem;
+  width: 100%;
   max-width:100%;
   background-color: rgb(240, 240, 240);
-  padding: 0 13vw 0 13vw;
-  margin: 0 0 5vh;
+  padding: 0 20% 0 20%;
 }
 #marginBot{
-  padding-top: 8vh;
-  margin-bottom: 1vh;
-  width: 50vw;
+  padding-top: 4em;
+  margin-bottom: 5em;
+  width: 50rem;
 }
-.divbot {
-  width: 100vw;
-  max-width:100%;
-  padding: 0 13vw 0 13vw;
-  margin-bottom: 12vh;
+h1{
+  font-size: 3em;
 }
 .smalldiv {
-  width: 17vw;
-  height: 10vh;
-  margin: 0 0 12vh 0;
-  padding: 0 2vw 0 0;
+  width: 19rem;
   text-align: left;
   line-height: 1.5rem;
-  max-height: 100%;
+  max-height: 30%;
+  max-width: 20%;
 }
 .smalldiv > img{
-    margin-bottom: 4vh;
+    margin-bottom: 2em;
 }
 .smalldiv > h2{
-    margin-bottom: 4vh;
+    margin-bottom: 1em;
+    font-size: 2rem;
+    line-height: 1em;
+}
+.divbot {
+  width: 100%;
+  max-width:100%;
+  padding: 0 20% 5em 20%;
 }
 h3{
   font-size: 14px;
   font-weight: 900;
   color: hsl(233, 8%, 62%);
-  margin-bottom: 2vh;
-  margin-top: 2vh;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+h4 > a{
+  color: black;
 }
 h4 > a:active{
   color: hsl(136, 65%, 51%);
 }
 .article > img{
-    width: 17vw;
-    height: 150px;
+    width: 17em;
+    height: 14em;
     border-radius: 3px 3px 0 0;
 }
-
 .article{
-    width: 17vw;
+    width: 17rem;
+    margin-bottom: 1em;
 }
 .article > p{
   font-size: 16px;
@@ -154,11 +167,13 @@ h4 > a:active{
   color: hsl(233, 8%, 62%);
 }
 h4{
-  margin-bottom: 2vh;
+  margin-bottom: 1em;
   font-weight: 900;
+
 }
 #bottomtitle{
-  margin:5vh 0 5vh 13vw;
+  margin: 6rem 0 5rem 0;
+  padding-left: 20%;
 }
 footer{
   color: white;
@@ -166,8 +181,8 @@ footer{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 2vh 13vw 2vh 13vw;
-  height: 20vh;
+  padding: 2rem 20% 2rem 20%;
+  height: 14rem;
 }
 .footerdiv{
   display: flex;
@@ -192,17 +207,17 @@ path:active{
   list-style-type: none;
 }
 .list > li{
-  padding-right: 8vw;
+  padding-right: 4em;
 }
 .list > li > a:active{
   color: hsl(136, 65%, 51%);
 }
 #botlist{
-  margin-top: 3vh;
+  margin-top: 0.5em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  line-height: 3.5vh;
+  line-height: 3em;
 }
 button:active{
   opacity: 0.5;
@@ -211,16 +226,80 @@ button:active{
 button:focus{
 outline: none;
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 128.125em){
+  .article:first-of-type{
+  margin-right: 20em;  
+}
+@media screen and (max-width: 101.25em){
+  .article:first-of-type{
+  margin-right: 15em;  
+}
+@media screen and (max-width: 93.75em){
+  header {
+    padding: 1em 2em 1em 2em;
+}
+.bigtopdiv {
+  padding: 0 0 0 1rem;
+}
+#bottomtitle{
+  padding-left: 1rem;
+}
+.divbot {
+  padding: 0 1rem 5em 1rem;
+}
+.article{
+  width: 20em;
+}
+.article:first-of-type{
+  margin-right: 0;  
+}
+.smalldiv{
+  height: 21rem;
+  width: 15rem;
+}
+.smalldiv > img{
+  margin-bottom: 1em;
+}
+.smalldiv > h2{
+  margin-bottom: 1rem;
+}
+.smalldiv:last-of-type > h2{
+line-height: 4rem;
+margin-bottom: 0.5em;
+}
+footer{
+  padding: 2rem 1rem 2rem 1rem;
+}
+#middlediv{
+  padding: 0 1rem 0 1rem;
+}
+@media screen and (max-width: 69.375em){
+  #menu{
+    display: inline-block;
+    width: 3em;
+    height: 2em;
+    margin: 0.5em 3vw 0 0 ;
+  }
+  header > ul {
+    display: none;
+  }
+  header > button{
+    display: none;
+  }
+  .botdiv{
+    padding: 0;
+  }
+}
+@media screen and (max-width: 56.25em){
   #phoneimage{
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
   }
   header{
-    padding-top: 1.5vh;
-    padding-left: 6vw;
-    height: 7vh;
+    padding-top: 1em;
+    padding-left: 2em;
+    height: 5em;
   }
   #menu{
     display: inline-block;
@@ -229,7 +308,9 @@ outline: none;
     margin: 1vh 7vw 0 0 ;
   }
   header > img{
-    width: 160px;
+    margin-top: 0.5em;
+    width: 10em;
+    height: 2em;
   }
   header > ul {
     display: none;
@@ -240,16 +321,16 @@ outline: none;
   .bigtopdiv{
     flex-flow: column nowrap;
     position: static;
-    height: 100vh;
+    height: 80vh;
     padding: 0;
   }
   .bigtopdiv > .topdiv{
     order: 1;
     margin: 0;
     width: 100%;
-    height: 60vh;
+    height: 20vh;
     text-align: center;
-    padding: 0 5vw;
+    padding: 5em 0;
   }
   .topdiv > h1
   {
@@ -261,17 +342,17 @@ outline: none;
   #bkg{
     background-size: 100% , 150%;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     max-width: 100%;
     background-position: 0vw -25vh;
     order: 0;
+    z-index: 0;
     position: static;
   }
   #middlediv{
-    height: 200vh;
+    height: 130vh;
     display: flex;
     flex-flow: column nowrap;
-    padding: 0 5vw;
   }
   #marginBot{
     padding-top: 0;
@@ -288,28 +369,33 @@ outline: none;
 
   }
   .smalldiv{
-    height: 25vh;
-    width: 100%;
+    height: 15em;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
+    max-width: 100%;
   }
   #bottomtitle{
-    margin: 0 0 5vh 0;
+    margin: 1em 0 2em 0;
     text-align: center;
+  }
+  .article:first-of-type{
+    margin: 1em auto;
   }
   .article{
     text-align: left;
-    padding: 0 5vw;
-    width: 100%;
-    margin: 0 0 5vh 0;
+    padding: 0 2em;
+    width: 80%;
+    margin: 1em auto;
   }
   .article > p{
     padding: 0 7vw;
     font-size: 14px;
   }
   .article > img{
+    margin: 1em auto;
     width: 100%;
-    height: 26vh;
-    margin-bottom: 1vh;
+    aspect-ratio: 1;
   }
   .article > h3{
     text-align: left;
@@ -379,5 +465,13 @@ outline: none;
   #mobilemenu > ul > li > a{
     color: hsl(233, 26%, 24%);
     font-weight: 900;
+  }
+}
+@media screen and (max-width: 30.125em){
+  #middlediv{
+    height: 140vh;
+  }
+  #bkg{
+    height: 24vh;
   }
 }
